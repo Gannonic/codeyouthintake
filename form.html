@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+       
+        <h1>My Feedback Form</h1>
+
+        <ul style="list-style-type:disc;">
+            <ul style="list-style-type:disc;">
+        <li><label for="fname">First name:</label></li>
+        <input type="text" id="fname" name="fname">
+        <li><label for="email">Email:</label></li>
+        <input type="email" id="email" name="email">
+        <li><label for="password">Password:</label></li>
+        <input type="password" id="password" name="password">
+        <li><label for="dob">Date of Birth:</label></li>
+        <input type="date" id="dob" name="dob">
+</ul>
+
+        <li><p>Please check all that apply to you:</p></li>
+<ul style="list-style-type:disc;">
+    <li><label for="angry">Angry</label></li>
+        <input type="checkbox" id="angry" name="emotions" value="angry">
+        <li><label for="sad">Sad</label></li>
+        <input type="checkbox" id="sad" name="emotions" value="sad">
+        <li><label for="happy">Happy</label><br></li>
+        <input type="checkbox" id="happy" name="emotions" value="happy">
+        <li><label for="Ambivalent">Ambivalent</label><br></li>
+        <input type="checkbox" id="Ambivalent" name="emotions" value="Ambivalent">
+        
+</ul>
+        <li><p>How satisfied were you with our service</p></li>
+<ul style="list-style-type:disc;">
+    <li><label for="vsatisfied">Very Satisfied</label><br></li>
+        <input type="radio" id="vsatisfied" name="feelings" value="vsatisfied">
+        <li><label for="satisfied">Satisfied</label><br></li>
+        <input type="radio" id="satisfied" name="feelings" value="satisfied">
+        <li><label for="idc">Didn't care</label><br></li>
+        <input type="radio" id="idc" name="feelings" value="idc">
+        <li><label for="diss">Dissatisfied</label><br></li>
+        <input type="radio" id="diss" name="feelings" value="diss">
+        <li><label for="vdiss">Very Dissatisfied</label><br></li>
+        <input type="radio" id="vdiss" name="feelings" value="vdiss">
+        <br>
+    </ul>     
+    <ul style="list-style-type:disc;">
+        <li><label for="comments">Further Comments:</label></li>
+        <input type="text" id="comments" name="comments"><br>
+        <li><label for="bio">Bio Photo:</label></li>
+        <input type="file" id="bio" name="bio"><br>
+        <li><p>Location visited:</li>
+        <input list="location">
+  <datalist id="location">
+    <option value="Canada">
+    <option value="USA">
+    <option value="Mexico">
+  </datalist></p>
+</ul>
+        <li><input type="submit" value="Submit"></li>
+    </ul>
+    </form>
+
+</body> 
+</html>
