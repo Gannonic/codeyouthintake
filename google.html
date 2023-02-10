@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google Homepage</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-<style>
 
-.topnavbar {
-    position: relative;
-    z-index: 4;
-    font-size: 10px;
-    background-color: white;
-    color: #282A35;
-    padding: 5px 5px;
-    font-family: 'Source Sans Pro', sans-serif;
-    text-align: left;
-    height: 75px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-content: left;
-    font-size: medium
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  header {
+    width: 100%;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  #nav_bar {
+    float: right;
+    display: flex
   }
 
-    .container {
-        width: ;
-        height: ;
-        text-align:center;
-        padding-top: 15%;
-        padding-bottom: 1%;
-        align-self: center;
-    }
-    .logo {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: contain;
-    object-position: center bottom;
-    width: auto;
-}
+  #nav_barleft {
+    float: left;
+    display: flex;
+    justify-content: flex-start
+  }
+  
+  #nav_bar li {
+    display: inline-block;
+    padding: 8px;
+  }
+  
+  #nav_bar #sign_in {
+    background: #4887ef; 
+    margin-right: 25px;
+    padding: 7px 15px;
+    border-radius: 3px; 
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    color: #404040;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  li.nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  #sign_in:hover { 
+    box-shadow: 1px 1px 5px #999;
+  }
+  
+  #sign_in {
+    color: #fff;
+  }
+  
+  .google #google_logo {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    clear: both;
+    padding-top: 112px;
+    padding-bottom: 20px;
+  }
 
-.box{
+  .box{
     width: 100%; 
     text-align: center;
     margin: 0 auto;
     align-self: center;
+    display: flex;
+    justify-content: center; 
 }
-
-#roundbox {
+  
+  #roundbox {
     width: 550px;
     height: 34px;
     object-position: center;
@@ -58,37 +93,145 @@
     border-radius: 50px;
     flex: 1;
     display: flex;
-   justify-content: center;  
+   justify-content: center; 
+   padding-top: 8px
 }
 
 #search {
-    margin: 0 auto;
     display: block;
     width: 443px;
     height:34px;
     border: none;
     align-self: center;
-   
-   
+    justify-content: center
 }
 
-</style>
+.box {
+    width: 100%; 
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-self: center;
+}
+
+.buttoncontainer {
+    width: 100%; 
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; 
+    align-self: center;
+    margin-top:25px
+}
+  #buttons {
+    background-color: #f0f0f0; /* Green */
+  border: none;
+  color: rgb(14, 14, 14);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  align-self: center;
+  margin: 8px;
+  border-radius: 3px
+
+  }
+  
+
+  footer  {
+    background: #f2f2f2;
+    border-top: solid 2px #e4e4e4;
+    position: fixed;
+    bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+    
+  }
+  
+  footer ul li {
+    display: inline;
+    color: #666666;
+    font-size: 14px;
+    padding: 13px;
+  }
+  
+  footer ul {
+    float: left;
+    padding: 1px;
+  }
+  
+  footer ul a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-right {
+    float: right;
+  }
+  
+  </style>
+
 <body>
- <div class="topnavbar">
-    <p style="margin-right:7px;">About</p>      
-    <p style="margin-right:30px;">Store</p>
-    <p> Woesa</p>
- </div>
+    <header>
+        <nav>  
+            <ul id="nav_barleft">
+            
+            <li class="nav-links" id="gmail" style="margin-right:10px"><a href="#">About</a></li>
+            <li class="nav-links" id="gmail"><a href="#">Store</a></li>
+            </ul>
 
-    <div class="container">
-        <img src="https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" class="logo" style="height: 92px;aspect-ratio: auto 272 / 92;width: 272px;">
-    </div>
-    <div class="box" id="roundbox">
+          <ul id="nav_bar">
+          
+            <li class="nav-links" id="gmail"><a href="#">Gmail</a></li>
+            <li class="nav-links"><a href="#">Images</a></li>
+            <li class="nav-links"><img src="https://cdn-icons-png.flaticon.com/128/8111/8111039.png" alt="magni" style="width:22px;height:22px;"></li>
+            <li id="sign_in"><a href="#">Sign In</a></li>
+          </ul>  
+        </nav>  
+      </header>  
+      
+    
+      <div class="google">
+        <a href="#" id="google_logo"><img src="https://www.google.ca/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="photo google-logo_zpspkcztsjo.png" style="height: 92px;aspect-ratio: auto 272 / 92;width: 272px;"></a>
+      </div>
+      
+   
+      <div class="box" id="roundbox">
         <img src="https://cdn-user-icons.flaticon.com/92301/92301749/1675963752164.svg?token=exp=1675964651~hmac=9558d2cfc079bf4e33dc33b255c7c555" alt="magni" style="width:20px;height:20px;">
-         <input type="search" id="search" placeholder="search" />
-         <img src="https://cdn-icons-png.flaticon.com/128/3128/3128290.png" alt="mic" style="width:25px;height:25px;">
+         <input type="search" id="search" placeholder="" />
+         <img src="https://cdn-icons-png.flaticon.com/128/3128/3128290.png" alt="mic" style="width:25px;height:25px;margin-right:7px">
          <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDI0LjAuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IlN0YW5kYXJkX3Byb2R1Y3RfaWNvbiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIKCSB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjE5MnB4IiBoZWlnaHQ9IjE5MnB4IiB2aWV3Qm94PSIwIDAgMTkyIDE5MiIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTkyIDE5MiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxyZWN0IGlkPSJib3VuZGluZ19ib3hfMV8iIGZpbGw9Im5vbmUiIHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIi8+CjxnIGlkPSJhcnRfbGF5ZXIiPgoJPGNpcmNsZSBpZD0iRG90IiBmaWxsPSIjNDI4NUY0IiBjeD0iOTYiIGN5PSIxMDQuMTUiIHI9IjI4Ii8+Cgk8cGF0aCBpZD0iUmVkIiBmaWxsPSIjRUE0MzM1IiBkPSJNMTYwLDcydjQwLjE1VjEzNmMwLDEuNjktMC4zNCwzLjI5LTAuODIsNC44MnYwdjBjLTEuNTcsNC45Mi01LjQzLDguNzgtMTAuMzUsMTAuMzVoMHYwCgkJYy0xLjUzLDAuNDktMy4xMywwLjgyLTQuODIsMC44Mkg2NmwxNiwxNmg1MGgxMmM0LjQyLDAsOC42My0wLjksMTIuNDYtMi41MWMzLjgzLTEuNjIsNy4yOC0zLjk2LDEwLjE3LTYuODYKCQljMS40NS0xLjQ1LDIuNzYtMy4wMywzLjkxLTQuNzRjMi4zLTMuNCwzLjk2LTcuMjgsNC44MS0xMS40NGMwLjQzLTIuMDgsMC42NS00LjI0LDAuNjUtNi40NXYtMTJWOTYuMTVWODRsLTYtMTlsLTEwLjgyLDIuMTgKCQlDMTU5LjY2LDY4LjcxLDE2MCw3MC4zMSwxNjAsNzJ6Ii8+Cgk8cGF0aCBpZD0iQmx1ZSIgZmlsbD0iIzQyODVGNCIgZD0iTTMyLDcyYzAtMS42OSwwLjM0LTMuMjksMC44Mi00LjgyYzEuNTctNC45Miw1LjQzLTguNzgsMTAuMzUtMTAuMzVDNDQuNzEsNTYuMzQsNDYuMzEsNTYsNDgsNTYKCQloOTZjMS42OSwwLDMuMjksMC4zNCw0LjgyLDAuODJjMCwwLDAsMCwwLDBMMTQ5LDQ1bC0xNy01bC0xNi0xNmgtMTMuNDRIOTZoLTYuNTZINzZMNjAsNDBINDhjLTE3LjY3LDAtMzIsMTQuMzMtMzIsMzJ2MTJ2MjBsMTYsMTYKCQlWNzJ6Ii8+Cgk8cGF0aCBpZD0iR3JlZW4iIGZpbGw9IiMzNEE4NTMiIGQ9Ik0xNDQsNDBoLTEybDE2LjgzLDE2LjgzYzEuMjMsMC4zOSwyLjM5LDAuOTMsMy40NywxLjU5YzIuMTYsMS4zMiwzLjk3LDMuMTMsNS4yOSw1LjI5CgkJYzAuNjYsMS4wOCwxLjIsMi4yNCwxLjU5LDMuNDd2MEwxNzYsODRWNzJDMTc2LDU0LjMzLDE2MS42Nyw0MCwxNDQsNDB6Ii8+Cgk8cGF0aCBpZD0iWWVsbG93IiBmaWxsPSIjRkJCQzA0IiBkPSJNNDgsMTY4aDM5Ljg5bC0xNi0xNkg0OGMtOC44MiwwLTE2LTcuMTgtMTYtMTZ2LTIzLjg5bC0xNi0xNlYxMzZDMTYsMTUzLjY3LDMwLjMzLDE2OCw0OCwxNjh6CgkJIi8+CjwvZz4KPC9zdmc+Cg==" alt="camera" style="width:25px;height:25px;">
-</div>""
+</div>
+      <div class="buttoncontainer">
+      <div id= "buttons">  
+        <a>Google Search</a>
+      </div>
+    <div id= "buttons"> 
+        <a>I'm Feeling Lucky</a>
+      </div>
+        </div>
 
+        <div class="box">
+<p style="text-align=center">Google also offered in: <a style="color:purple"> Français</a></p>
+
+
+        <footer>
+            <ul class="footer-left">
+              <li><a href="#">Canada</a></li>
+            </ul>      
+        </footer>      
+      <footer>
+          <ul class="footer-left">
+            <li><a href="#">Advertising</a></li>
+            <li><a href="#">Business</a></li>
+            <li><a href="#">How Search Works</a></li> 
+          </ul>
+          <ul class="footer-right">    
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Settings</a></li>
+          </ul>       
+      </footer>      
 </body>
 </html>
